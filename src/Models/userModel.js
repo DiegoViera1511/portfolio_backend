@@ -1,5 +1,4 @@
 import db from "../db/MySQL/index.js"
-import bcrypt from "bcrypt"
 
 export class UserModel {
     static async createUser({userData}) {
