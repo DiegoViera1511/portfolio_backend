@@ -17,7 +17,7 @@ export class UserController {
                 res.sendStatus(201)
             }
         } catch (e) {
-            res.status(500).json({message: e.message})
+            res.status(400).json({message: e.message})
         }
     }
 

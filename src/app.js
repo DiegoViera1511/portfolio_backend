@@ -1,7 +1,6 @@
 import express from "express";
 import cors from "cors";
 import {appRouter} from "./appRouter.js";
-import {PORT} from "../config.js";
 
 export const createApp = () => {
     const app = express();
@@ -16,11 +15,11 @@ export const createApp = () => {
         //Para hacer la acción hay que hacer res.send()
         res.send(200)
     })
-
+    
     app.use("/api", appRouter());
 
-    app.listen(PORT, () => {
-        console.log(`listening on port http://localhost:${PORT}`);
+    app.listen("8080", () => {
+        console.log(`listening on port http://portfoliobackend-production-a536.up.railway.app:8080`);
     })
 }
 

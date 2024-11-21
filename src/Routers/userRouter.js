@@ -12,7 +12,7 @@ export const userRouter = () => {
         try {
             const token = req.headers.authorization?.split(' ')[1];
             isValidToken(token);
-            res.sendStatus(200);
+            res.send("You are in the protected area")
         } catch (e) {
             res.sendStatus(400).send({message: e.message})
         }
