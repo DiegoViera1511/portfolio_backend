@@ -10,6 +10,6 @@ const config = {
     database: DB_NAME,
 }
 //Establecer conección con la base de datos con la configuración 
-const db = await mysql.createConnection(config);
+const db = await mysql.createPool(config);
 
 export default db
