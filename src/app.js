@@ -23,3 +23,5 @@ export const createApp = () => {
         console.log(`listening on port http://localhost:${PORT}`);
     })
 }
+
+createApp()
